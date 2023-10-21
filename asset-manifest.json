@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Shop-App/static/css/main.197f1ad4.css",
+    "main.js": "/Shop-App/static/js/main.a76d4c9e.js",
+    "static/media/empty.webp": "/Shop-App/static/media/empty.f26d8e96e1438893d744.webp",
+    "static/media/user.png": "/Shop-App/static/media/user.a6143582309785dca610.png",
+    "index.html": "/Shop-App/index.html",
+    "main.197f1ad4.css.map": "/Shop-App/static/css/main.197f1ad4.css.map",
+    "main.a76d4c9e.js.map": "/Shop-App/static/js/main.a76d4c9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.197f1ad4.css",
+    "static/js/main.a76d4c9e.js"
+  ]
+}
