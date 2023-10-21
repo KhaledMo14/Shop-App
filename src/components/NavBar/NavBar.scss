@@ -1,0 +1,36 @@
+.profile-w {
+    width: 3rem;
+}
+
+.cart-number{
+    color: white;
+}
+
+.cart-img{
+    border-radius: 50% !important;
+    width: 5rem !important;
+    height: 5rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    width: 27rem !important;
+    left: -286px !important;
+    padding: 1rem !important;
+}
+.navbar-brand{
+    cursor: pointer;
+}
+
+@media (min-width:200px) and (max-width:700px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        width: 26rem !important;
+        right: 3!important;
+        top: 55px;
+        padding: 1rem !important;
+        left: -13px !important;
+        border-radius: 0 !important;
+    }
+    
+}

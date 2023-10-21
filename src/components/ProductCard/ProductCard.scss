@@ -1,0 +1,86 @@
+.card-container {
+    background-color: #f8f9fa;
+}
+
+.product-card{
+    width: 23rem !important;
+    background: white !important;
+    cursor : pointer !important;
+    .card-body,.card-header{
+        background: white !important;
+    }
+    &:hover{
+        .product-img{
+            scale: 1.02;
+        }
+    }
+    .product-img-container{
+        height: 20rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white !important;
+        border: none;
+        
+        .product-img {
+            transition: .5s all ease-in-out ;
+            height: 20rem;
+            width: 20rem;
+            overflow: hidden;
+         } 
+    }
+   
+   
+    .truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+     }
+
+     .truncate-des {
+        @extend .truncate ;
+        -webkit-line-clamp: 2; 
+     }
+
+     .truncate-title {
+        @extend .truncate ;
+        -webkit-line-clamp: 1; 
+     }
+}
+.list-view-button,
+.grid-view-button {
+  color: rgb(17, 15, 15);
+  border: 1px solid rgb(7, 6, 6);
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.list-view-button:hover,
+.grid-view-button:hover,.active-view {
+  background: rgb(5, 4, 4);
+  color: white;
+}
+
+.grid-sm{
+    width: 25% !important;
+}
+
+@media (min-width:200px) and (max-width:900px) {
+    .grid-sm {
+        height: 17rem !important;
+        width: 33rem !important;
+        .product-img{
+            width: 100% !important;
+            height: 75% !important;
+        }
+    }
+
+    
+}
+
+
