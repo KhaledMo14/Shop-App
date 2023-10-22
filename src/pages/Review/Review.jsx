@@ -92,10 +92,10 @@ export const Review = () => {
           </>
         ) : (
           <div>
-            <div className="text-center">
+            <div className="text-center empty m-auto">
               <img
                 alt="no-data"
-                className="d-block m-auto"
+                className="d-block m-auto w-100"
                 src={require("../../assets/images/empty.webp")}
               />
               <Link className="btn btn-primary" to="/">

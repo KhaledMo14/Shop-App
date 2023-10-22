@@ -24,7 +24,7 @@ export const ProductCard = ({parentToChild}) => {
 
   return (
     <>
-    <div className="filter-buttons container d-flex ms-5">
+    <div className="view ms-5 mb-3">
       <div className={`list-view-button ${!gridView ? "active-view" : ""}`} onClick={() =>setGridView(false)}><FaThList/> List view</div>
       <div className={`grid-view-button mx-3  ${gridView ? "active-view" : ""}`} onClick={() =>setGridView(true)}><BsFillGrid3X3GapFill/> Grid view</div>
     </div>

@@ -70,15 +70,25 @@
     width: 25% !important;
 }
 
-@media (min-width:200px) and (max-width:900px) {
-    .grid-sm {
-        height: 17rem !important;
-        width: 33rem !important;
-        .product-img{
-            width: 100% !important;
-            height: 75% !important;
-        }
+.view {
+    display: flex;
+}
+
+
+@media (min-width:768px) and (max-width:1200px) {
+
+    .product-card {
+       width: 18rem !important;
     }
+   
+       
+   }
+   
+@media (min-width:250px) and (max-width:768px) {
+
+ .view {
+    display: none;
+ }
 
     
 }

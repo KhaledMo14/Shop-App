@@ -14,3 +14,15 @@ th{
 td{
     height: 6rem !important;
 }
+
+.empty {
+    width: 50%;
+}
+
+@media (min-width:200px) and (max-width:900px) {
+    .empty {
+        width: 100% !important;
+    }
+
+    
+}
