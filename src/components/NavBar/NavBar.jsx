@@ -49,8 +49,8 @@ export const NavBar = ({childToParent}) => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-          <input className="form-control me-sm-5 my-sm-4 my-md-3" 
+          <Nav className="ms-auto d-lg-flex justify-content-center align-items-center nav-small">
+          <input className="form-control search-input me-sm-5 my-sm-4 my-md-3" 
           onChange={handleInputChange}
            value={searchText}
            type="search"
@@ -61,6 +61,7 @@ export const NavBar = ({childToParent}) => {
             <NavDropdown
               title={<AiOutlineShoppingCart size={35} />}
               id="basic-nav-dropdown"
+              className="mt-4"
             >
               {cart.map((item, i) => {
                 return (

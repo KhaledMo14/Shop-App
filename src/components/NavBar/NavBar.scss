@@ -14,7 +14,7 @@
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
-    width: 27rem !important;
+    width: 24rem !important;
     left: -286px !important;
     padding: 1rem !important;
 }
@@ -22,10 +22,21 @@
     cursor: pointer;
 }
 
-@media (min-width:200px) and (max-width:700px) {
+@media (min-width:200px) and (max-width:900px) {
+    .nav-small {
+        display: block !important;
+        position: relative !important;
+        .cart-number{
+            position: absolute;
+            bottom: 25px;
+        }
+        .search-input{
+            margin-top: 20px !important;
+        }
+    }
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: absolute;
-        width: 26rem !important;
+        width: 24rem !important;
         right: 3!important;
         top: 55px;
         padding: 1rem !important;

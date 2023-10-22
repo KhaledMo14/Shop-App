@@ -7,13 +7,16 @@ import "react-phone-number-input/style.css";
 import "./Order.scss";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import {useDispatch} from "react-redux";
+import {clearCart} from "../../redux/cartSlice";
+
 import "react-toastify/dist/ReactToastify.css";
 
 export const Order = () => {
   const notify = () =>
     toast.success("Submitted Successfully", {
       position: "bottom-left",
-      autoClose: 5000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -34,7 +37,7 @@ export const Order = () => {
     },
   });
   const [value, setValue] = useState();
-  console.log(errors);
+  const dispatch = useDispatch();
   return (
     <>
       <NavBar />
@@ -43,15 +46,13 @@ export const Order = () => {
         <h1 className="text-center">Order Now</h1>
       </header>
 
-      <div className="col-md-5 mx-auto mt-5 mt-5 p-3 py-4 border rounded-3 container-animation">
+      <div className="order col-md-5 mx-auto mt-5 mt-5 p-3 py-4 border rounded-3 container-animation">
         <Form
-          onSubmit={handleSubmit((data) => {
+          onSubmit={handleSubmit(() => {
             reset();
             setValue("");
-            console.log(data);
-            if (Object.keys(errors).length === 0) {
               notify();
-            }
+            dispatch(clearCart())
           })}
         >
           <Form.Group className="mb-3">
@@ -105,9 +106,13 @@ export const Order = () => {
           </Form.Group>
 
           <Button variant="primary" className="w-100 mt-3" type="submit">
-            <ToastContainer
+            Submit
+          </Button>
+        </Form>
+      </div>
+      <ToastContainer
               position="bottom-left"
-              autoClose={5000}
+              autoClose={3000}
               hideProgressBar={false}
               newestOnTop={false}
               closeOnClick
@@ -117,10 +122,6 @@ export const Order = () => {
               pauseOnHover
               theme="light"
             />
-            Submit
-          </Button>
-        </Form>
-      </div>
     </>
   );
 };
