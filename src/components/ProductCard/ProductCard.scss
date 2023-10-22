@@ -80,8 +80,6 @@
     .product-card {
        width: 18rem !important;
     }
-   
-       
    }
    
 @media (min-width:250px) and (max-width:768px) {
@@ -89,6 +87,9 @@
  .view {
     display: none;
  }
+  .product-card {
+    width:20rem !important ;
+  }
 
     
 }
