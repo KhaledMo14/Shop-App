@@ -61,7 +61,8 @@ export const NavBar = ({childToParent}) => {
             <NavDropdown
               title={<AiOutlineShoppingCart size={35} />}
               id="basic-nav-dropdown"
-              className="mt-4"
+              className="cart-icon"
+             
             >
               {cart.map((item, i) => {
                 return (
