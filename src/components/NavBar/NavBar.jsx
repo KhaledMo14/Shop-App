@@ -64,7 +64,6 @@ export const NavBar = ({childToParent}) => {
             >
               {cart.map((item, i) => {
                 return (
-                  // <DropdownItem  >
                   <div
                     className="d-flex py-2 align-items-center my-1 border-bottom"
                     key={`${item} ${i}`}
@@ -98,7 +97,6 @@ export const NavBar = ({childToParent}) => {
                      
                     </div>
                   </div>
-                  // </DropdownItem>
                 );
               })}
               <div 

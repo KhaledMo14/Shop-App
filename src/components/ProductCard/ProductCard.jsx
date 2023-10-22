@@ -32,7 +32,6 @@ export const ProductCard = ({parentToChild}) => {
       <Loader/>
       ) : (
         <>
-        {/* gridView ? ( */}
           <div className="card-container container-animation">
           <div className="container">
             <div className="row">
