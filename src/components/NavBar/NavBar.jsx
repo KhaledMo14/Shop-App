@@ -36,6 +36,7 @@ export const NavBar = ({childToParent}) => {
       className="bg-body-tertiary"
       bg="dark"
       data-bs-theme="dark"
+      sticky="top"
     >
       <Container>
         <Navbar.Brand className="w-25">
